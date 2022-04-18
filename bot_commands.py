@@ -19,7 +19,7 @@ def bye_command(update: Update, context: CallbackContext):
 def city_command(update: Update, context: CallbackContext):
     # msg = update.message.text
     # print(msg)
-    update.message.reply_text(f'Погода: {dp.get_weather(update, context)}')
+    update.message.reply_text (dp.get_weather(update, context))
     # print (f'Погода: {dp.get_weather()}')
 
 def help_command(update: Update, context: CallbackContext):

@@ -17,8 +17,12 @@ def bye_command(update: Update, context: CallbackContext):
     update.message.reply_text(f'Пока {update.effective_user.first_name}')
 
 def city_command(update: Update, context: CallbackContext):
-    city = update.message.text
-    # print(city)
-    update.message.reply_text(f'Погода: {dp.get_city}')
+    # msg = update.message.text
+    # print(msg)
+    update.message.reply_text(f'Погода: {dp.get_weather(update, context)}')
+    # print (f'Погода: {dp.get_weather()}')
+
 def help_command(update: Update, context: CallbackContext):
-    update.message.reply_text(f' /start\n/time\n/bye\n/help\n/city {update.effective_user.first_name}')
+    update.message.reply_text(f' /hi\n/time\n/bye\n/help\n/city {update.effective_user.first_name}')
+
+# city_command()

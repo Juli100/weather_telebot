@@ -1,3 +1,5 @@
+from turtle import update
+from pip import main
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
 # from bot_commands import hi_command, time_command, city_command, help_command, bye_command
@@ -14,3 +16,4 @@ updater.dispatcher.add_handler(CommandHandler('bye', bye_command))
 print('sever start')
 updater.start_polling()
 updater.idle()
+
